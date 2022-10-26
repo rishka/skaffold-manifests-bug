@@ -1,0 +1,9 @@
+apiVersion: skaffold/v2beta8
+kind: Config
+build:
+  artifacts:
+  - image: test
+deploy:
+  kubectl:
+    remoteManifests:
+      - deploy/test
